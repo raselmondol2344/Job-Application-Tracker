@@ -1,6 +1,6 @@
 let interviewList = [];
 let rejectedList = [];
-let currentStatus = 'all'
+let currentStatus ='all-filter-btn'
 
 let total = document.getElementById('total');
 let interviewCountCount = document.getElementById('interviewCount')
@@ -17,8 +17,8 @@ const filterSection = document.getElementById('filtered-section')
 
 function calculateCount() {
     total.innerText = allCardSection.children.length //3
-    interviewCountCount.innerText = thrivingList.length
-    rejectedCountCount.innerText = strugglingList.length
+    interviewCountCount.innerText = interviewList.length
+    rejectedCountCount.innerText = rejectedList.length
 }
 
 calculateCount()
@@ -68,7 +68,7 @@ function toggleStyle(id) {
 // step 2 delegation
 mainContainer.addEventListener('click', function (event) {
 
-    if (event.target.classList.contains('interview-btn')) {
+    if (event.target.classList.contains('thriving-btn')) {
         const parenNode = event.target.parentNode.parentNode;
 
         const plantName = parenNode.querySelector('.plantName').innerText
@@ -103,7 +103,7 @@ mainContainer.addEventListener('click', function (event) {
          calculateCount()
 
 
-    } else if (event.target.classList.contains('rejected-btn')) {
+    } else if (event.target.classList.contains('struggling-btn')) {
         const parenNode = event.target.parentNode.parentNode;
 
         const plantName = parenNode.querySelector('.plantName').innerText
