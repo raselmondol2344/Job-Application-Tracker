@@ -19,19 +19,19 @@
 
         <header class="mx-8   p-5 border-gray-400 border-b-2">
             <h1 class="mb-3 text-blue-950 font-bold text-2xl">Job Application Tracker</h1>        
-                <div class="headerDiv grid grid-cols-3">
+                <div class="headerDiv grid grid-cols-3 ">
 
-                    <div id="total" class=" bg-base-200 w-80 h-20 shadow-md">
+                    <div class=" bg-base-200 w-80 h-20 shadow-md  ">
                         <h1 class="ml-4 mt-2">total</h1>
-                        <h1 class=" ml-4 mt-2 font-bold">8</h1>
+                        <h1 id="total"  class=" ml-4 mt-2 font-bold">8</h1>
                     </div>
-                    <div id="interview" class=" bg-base-200 w-80 h-20 shadow-md ">
-                        <h1 class="ml-4 mt-2">interview</h1>
+                    <div  class=" bg-base-200 w-80 h-20 shadow-md  ">
+                        <h1 id="interview"  class="ml-4 mt-2">interview</h1>
                         <h1 class=" ml-4 mt-2 font-bold text-green-500">0</h1>
                     </div>
-                    <div id="rejected" class=" bg-base-200 w-80 h-20 shadow-md ">
+                    <div  class=" bg-base-200 w-80 h-20 shadow-md  ">
                         <h1 class="ml-4 mt-2">rejected</h1>
-                        <h1 class=" ml-4 mt-2 font-bold text-red-500">0</h1>
+                        <h1 id="rejected" class=" ml-4 mt-2 font-bold text-red-500">0</h1>
                     </div>
                 </div>
         </header>
@@ -51,13 +51,13 @@
 
         </section>
 
-        <section id="jobs" class="flex flex-col gap-10">
+        <section id="allCards" class="flex flex-col space-y-10">
             <div class="card-1  flex justify-between border-gray-300 rounded-sm shadow-md bg-white">
                 <div class="card-content p-5">
                     <h2 class=" text-blue-950  text-2xl font-semibold">Mobile First Corp</h2>
                     <p class="text-gray-500">React Native Developer</p>
                     <p class="py-4 text-gray-500">Remote • Full-time •  $130,000 - $175,000 </p>
-                    <button class="btn btn-active">Not Applied</button>
+                    <button id="apply-btn" class="btn btn-outline btn-primery ">Not Applied</button>
                     <p class="py-3 text-gray-800 ">Build cross-platform mobile applications using React Native. 
                         Work on products used by millions of users worldwide.</p>
                     <div class="card-btn flex gap-3">
@@ -235,7 +235,7 @@
         
     
     
-    
+    <script src="script/script.js"></script>
     
     </body>
     
