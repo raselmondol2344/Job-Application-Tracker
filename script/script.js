@@ -210,8 +210,8 @@ function renderRejected() {
                      <p class="notes">New leaf unfurling by the east window.</p>
 
                      <div class="flex gap-5">
-                        <button class="thriving-btn bg-green-200 px-4 py-2">Thrive</button>
-                        <button class="struggling-btn bg-red-200 px-4 py-2">Struggle</button>
+                        <button class="thriving-btn bg-green-200 px-4 py-2">Interview</button>
+                        <button class="struggling-btn bg-red-200 px-4 py-2">Rejected</button>
                      </div>
                 </div>
 
